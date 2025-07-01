@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <h1>Sorteador manipulado por Kleber Araujo</h1>
+        
+        <div class="parte1">
+            <label >DIGITE OS NOMES PARA O SORTEIO:</label>
+            <textarea id="nomesInput"></textarea>
+            
+        </div>
+        <div class="parte2">
+            <label>QUANTIDADE DE NOMES PARA SORTEAR:</label>
+        <input type="number" id="quantidade"  min="1" />
+        </div>
+        <button onclick="sortearNomes()">Sortear Nomes</button>
+        
+        <p id="resultado" style="display:none;"></p>
+    </main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
