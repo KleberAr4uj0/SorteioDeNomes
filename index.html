@@ -1,34 +1,41 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
-</head>
-<body>
-    <header>
-
-    </header>
+  </head>
+  <body>
+    
 
     <main>
-        <h1>Sorteador manipulado por Kleber Araujo</h1>
-        
-        <div class="parte1">
-            <label >DIGITE OS NOMES PARA O SORTEIO:</label>
-            <textarea id="nomesInput"></textarea>
-            
+      <section class="parte1">
+        <div>
+          <h1>Sorteador </h1>
         </div>
-        <div class="parte2">
-            <label>QUANTIDADE DE NOMES PARA SORTEAR:</label>
-        <input type="number" id="quantidade"  min="1" />
+        <h2>Digite os nomes separados por vírgula:</h2>
+        <textarea id="participantes" placeholder="Exemplo: Kleber, Maria, Pedro" ></textarea>
+        <p id="mensagem"></p>
+        <ul id="listaDeParticipantes"></ul>
+        <button onclick="adicionarParticipantes()">
+          Adicionar participantes
+        </button>
+        <div class="numeros">
+          <h3>QUANTIDADE DE GANHADORES DA RODADA:</h3>
+          <input type="number" id="quantidade" min="1" />
         </div>
         <button onclick="sortearNomes()">Sortear Nomes</button>
-        
-        <p id="resultado" style="display:none;"></p>
+        <div class="resultado">
+          <p id="resultado" style="display: none"></p>
+        </div>
+      </section>
+      
     </main>
 
-<script src="script.js"></script>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
