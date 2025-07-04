@@ -9,7 +9,7 @@ function adicionarParticipantes() {
         return;
     }
 
-    mensagem.textContent = ''; // limpa mensagem de erro
+    mensagem.textContent = ''; 
 
     const nomes = texto.split(',').map(nome => nome.trim()).filter(nome => nome !== '');
 
@@ -35,7 +35,7 @@ function adicionarParticipantes() {
         lixeira.style.display = 'inline-block';
         lixeira.style.marginLeft = '10px';
 
-        // Evento de clique para remover o item
+        
         lixeira.addEventListener('click', () => {
             li.remove();
         });
@@ -44,7 +44,7 @@ function adicionarParticipantes() {
         listaParticipantes.appendChild(li);
     });
 
-    participantes.value = ''; // limpa o textarea
+    participantes.value = ''; 
 }
 function sortearNomes() {
     
@@ -67,7 +67,7 @@ function sortearNomes() {
       if (contador < 0) {
         clearInterval(intervalo);
   
-        // Embaralhar nomes
+        
         for (let i = nomes.length - 1; i > 0; i--) {
           const j = Math.floor(Math.random() * (i + 1));
           [nomes[i], nomes[j]] = [nomes[j], nomes[i]];
