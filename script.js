@@ -5,7 +5,7 @@ function adicionarParticipantes() {
     const texto = participantes.value.trim();
 
     if (texto === '' || /\d/.test(texto)) {
-      mensagem.textContent = 'Sem numero';
+      mensagem.textContent = 'Sem número';
       listaParticipantes.classList.add("lista-apagada");
       return
     } else {

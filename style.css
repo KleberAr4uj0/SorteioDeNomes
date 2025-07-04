@@ -122,6 +122,7 @@ input::-webkit-inner-spin-button {
 }
 #mensagem {
     text-align: center;
+    margin-top: 0.5rem
 }  
 .lista-apagada {
     opacity: 0.2;           
