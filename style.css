@@ -112,5 +112,8 @@ input::-webkit-inner-spin-button {
     font-size: 2rem;
     text-align: center;
     margin-top: 1rem;
+    display:flex;
+    flex-direction: column;
+    gap: 0.3rem;
 
 }
