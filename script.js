@@ -76,7 +76,7 @@ function sortearNomes() {
         const selecionados = nomes.slice(0, quantidade);
         resultado.innerHTML = `
         <img src="https://img.icons8.com/ios/50/00cec9/confetti.png" alt="Confete" style="width: 3.5rem; vertical-align: middle; margin-right: 10px;">
-        ${selecionados.join(' ')}
+        ${selecionados.join(' ')}<br>
         <img src="https://img.icons8.com/ios/50/00cec9/confetti.png" alt="Confete" style="width: 3.5rem; vertical-align: middle; margin-left: 10px;">
       `;
       
