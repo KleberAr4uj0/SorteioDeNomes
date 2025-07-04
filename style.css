@@ -74,6 +74,9 @@ input::-webkit-inner-spin-button {
         color: #1e1e2f;
         
     }
+    input::placeholder{
+        color: #1e1e2f;
+    }
     button{
         width: 100%;
         margin-top: 0.5rem;
@@ -117,3 +120,11 @@ input::-webkit-inner-spin-button {
     gap: 0.3rem;
 
 }
+#mensagem {
+    text-align: center;
+}  
+.lista-apagada {
+    opacity: 0.2;           
+    pointer-events: none;    
+    transition: opacity 0.3s ease;
+  }

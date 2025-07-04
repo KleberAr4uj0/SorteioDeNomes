@@ -4,12 +4,16 @@ function adicionarParticipantes() {
     const listaParticipantes = document.getElementById('listaDeParticipantes');
     const texto = participantes.value.trim();
 
-    if (texto === '') {
-        mensagem.textContent = 'Adicione participantes.';
-        return;
-    }
+    if (texto === '' || /\d/.test(texto)) {
+      mensagem.textContent = 'Sem numero';
+      listaParticipantes.classList.add("lista-apagada");
+      return
+    } else {
+      mensagem.textContent = '';
+      listaParticipantes.classList.remove("lista-apagada");
+  }
 
-    mensagem.textContent = ''; 
+    
 
     const nomes = texto.split(',').map(nome => nome.trim()).filter(nome => nome !== '');
 
