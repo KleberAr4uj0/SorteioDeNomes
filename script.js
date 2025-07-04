@@ -74,11 +74,13 @@ function sortearNomes() {
         }
   
         const selecionados = nomes.slice(0, quantidade);
-        resultado.innerHTML = `
-        <img src="https://img.icons8.com/ios/50/00cec9/confetti.png" alt="Confete" style="width: 3.5rem; vertical-align: middle; margin-right: 10px;">
-        ${selecionados.join(' ')}<br>
-        <img src="https://img.icons8.com/ios/50/00cec9/confetti.png" alt="Confete" style="width: 3.5rem; vertical-align: middle; margin-left: 10px;">
-      `;
+        resultado.innerHTML = selecionados.map(nome => `
+          <div style="display: flex; align-items: center; margin-bottom: 8px; justify-content: center;">
+            <span style="font-size: 1.2rem;">${nome}</span>
+            <img src="https://img.icons8.com/ios/50/00cec9/confetti.png" alt="Confete" style="width: 2rem; margin-left: 10px;">
+          </div>
+        `).join('');
+        
       
       }
     }, 1000);
