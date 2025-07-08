@@ -23,7 +23,7 @@ function adicionarParticipantes() {
         
 
         const lixeira = document.createElement('div');
-        lixeira.innerHTML =lixeira.innerHTML = `
+        lixeira.innerHTML = `
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256"
              style="fill:#00cec9;">
           <g fill="##00cec9" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
